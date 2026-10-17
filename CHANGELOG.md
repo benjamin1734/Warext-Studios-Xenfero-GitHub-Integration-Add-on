@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+- Added the missing GitHub icon to the top-level Admin CP navigation category.
+- Documented the exact Admin CP access paths and required wghManage permission.
+
 ## 0.9.0 Alpha 9
 - Added persistent `workflow_run` history captured from webhooks and optional GitHub refresh.
 - Added GitHub Actions run controls: re-run, re-run failed jobs and cancel.
