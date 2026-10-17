@@ -403,4 +403,3 @@
   <phrase title="wgh_ui_xfrm_mapping_title" addon_id="Warext/GitHubSync" global_cache="0" version_id="10000020" version_string="1.0.2"><![CDATA[XFRM eşlemesi - {title}]]></phrase>
   <phrase title="wgh_ui_xfrm_release_title" addon_id="Warext/GitHubSync" global_cache="0" version_id="10000020" version_string="1.0.2"><![CDATA[XFRM sürümü #{id}]]></phrase>
 </language>
-
