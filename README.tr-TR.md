@@ -1,10 +1,14 @@
-# Warext GitHub Sync for XenForo
+# Warext GitHub Sync for XenForo 1.0.2
 
 **Türkçe** | [English](README.md)
 
 **Warext GitHub Sync**, XenForo 2.3+ için modüler ve çift yönlü bir GitHub ↔ XenForo senkronizasyon eklentisidir. Sistem yalnızca “webhook geldi, foruma mesaj at” mantığında değildir; GitHub ve XenForo nesneleri arasında kalıcı kimlik bağı tutar.
 
-> Güncel durum: **0.9.0 Alpha 9 — geliştirme kaynak kodudur, production sürümü değildir.**
+> Güncel durum: **1.0.2 — geliştirme kaynak kodudur, production sürümü değildir.**
+
+## Admin CP erişimi
+
+XenForo Admin CP sol menüsündeki üst seviye **Warext GitHub Sync** kategorisini açın. GitHub ikonu bu kategoriyi ayırt eder. Dashboard, Connections, Repositories, Mappings, Templates, Actions, PR Tools, XFRM, Health, User Mappings, Conflicts, Webhook Logs ve Diagnostics ekranlarına bu kategori altından erişilir. Görünmüyorsa `wghManage` admin yetkisini verip Admin CP navigasyonunu yeniden oluşturun.
 
 ## Şu anda neler yapıyor?
 
