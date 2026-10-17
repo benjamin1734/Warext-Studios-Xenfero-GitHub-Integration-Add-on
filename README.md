@@ -6,15 +6,17 @@
 
 ### Download / Installation
 
-- **Download:** Use the latest package from [GitHub Releases](https://github.com/benjamin1734/Warext-Studios-Xenfero-Github-Baglanti-Otomasyonu/releases).
+- **Download:** Use the latest package from [GitHub Releases](https://github.com/benjamin1734/Warext-Studios-Xenfero-GitHub-Integration-Add-on/releases).
 - Install or upgrade directly from XenForo Admin CP → Add-ons → **Install/upgrade from archive**.
-- Existing `v0.9.4 Alpha 13` installations can be upgraded directly to v1.0.0 without uninstalling first.
+- Existing v1.0.1 installations can be upgraded directly to v1.0.2 without uninstalling first.
 
 ### Admin CP area
 
 Warext GitHub Sync appears as its own **collapsible Admin CP navigation group**. The group contains Dashboard, Connections, Repositories, Mappings, Templates, Actions, PR Tools, XFRM, Health, User Mappings, Conflicts, Webhook Logs and Diagnostics.
 
 Non-super administrators must be granted the custom `wghManage` administrator permission.
+
+To access it, open XenForo Admin CP and select the top-level **Warext GitHub Sync** category in the left navigation. The GitHub icon identifies the category. Use **Dashboard** for connection and delivery counters, **Connections** and **Repositories** for setup, **Mappings** and **Templates** for routing, **Actions** for workflow dispatch, and **Health**, **Conflicts**, **Webhook Logs** and **Diagnostics** for operations. If the category is not visible, grant `wghManage` and rebuild the Admin CP navigation after upgrading.
 
 ### Features
 
@@ -45,9 +47,9 @@ For questions, bug reports, installation support, and help with Warext Studios X
 
 ### İndir / Kurulum
 
-- **İndirme:** En güncel paketi [GitHub Releases](https://github.com/benjamin1734/Warext-Studios-Xenfero-Github-Baglanti-Otomasyonu/releases) sayfasından kullanın.
+- **İndirme:** En güncel paketi [GitHub Releases](https://github.com/benjamin1734/Warext-Studios-Xenfero-GitHub-Integration-Add-on/releases) sayfasından kullanın.
 - XenForo Admin CP → Add-ons → **Install/upgrade from archive** üzerinden doğrudan kurulabilir veya güncellenebilir.
-- `v0.9.4 Alpha 13` kullananlar eklentiyi kaldırmadan doğrudan v1.0.0'a yükseltebilir.
+- Mevcut v1.0.1 kurulumu kaldırılmadan doğrudan v1.0.2'ye yükseltilebilir.
 
 ### Admin CP alanı
 
@@ -68,6 +70,8 @@ Warext GitHub Sync, Admin CP sol menüsünde **bağımsız açılır bir kategor
 - Diagnostics
 
 Super admin olmayan yöneticilere `wghManage` admin yetkisi verilmelidir.
+
+Erişim için XenForo Admin CP sol menüsündeki üst seviye **Warext GitHub Sync** kategorisini açın. Kategori GitHub ikonu ile görünür. **Dashboard** bağlantı ve teslimat sayaçlarını, **Connections** ve **Repositories** kurulumu, **Mappings** ve **Templates** yönlendirmeyi, **Actions** workflow çalıştırmayı, **Health**, **Conflicts**, **Webhook Logs** ve **Diagnostics** operasyon ekranlarını açar. Kategori görünmüyorsa yöneticiye `wghManage` verin ve yükseltmeden sonra Admin CP navigasyonunu yeniden oluşturun.
 
 ### Özellikler
 
