@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/publish-pre-release.yml'
+      - '.gitattributes'
       - 'tools/build-xenforo-release.py'
       - 'tools/build-language-packs.py'
       - 'release/v1.0.2/**'
@@ -47,8 +48,8 @@ jobs:
           addon_meta = json.loads((addon / 'addon.json').read_text(encoding='utf-8'))
           if addon_meta.get('version_string') != '1.0.2':
               errors.append('addon.json version_string must be 1.0.2')
-          if addon_meta.get('version_id') != 10000010:
-              errors.append('addon.json version_id must be 10000010')
+          if addon_meta.get('version_id') != 10000020:
+              errors.append('addon.json version_id must be 10000020')
 
           phrase_keys = {p.stem for p in phrases.glob('*.txt')}
           refs = set()
