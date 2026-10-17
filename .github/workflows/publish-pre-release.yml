@@ -1,4 +1,4 @@
-name: Publish v1.0.1 stable release
+name: Publish v1.0.2 stable release
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - '.github/workflows/publish-pre-release.yml'
       - 'tools/build-xenforo-release.py'
       - 'tools/build-language-packs.py'
-      - 'release/v1.0.1/**'
+      - 'release/v1.0.2/**'
       - 'src/addons/Warext/GitHubSync/**'
       - 'languages/**'
       - 'LANGUAGE.md'
@@ -22,8 +22,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      TAG: v1.0.1
-      ZIP_NAME: Warext-GitHub-Sync-v1.0.1-install.zip
+      TAG: v1.0.2
+      ZIP_NAME: Warext-GitHub-Sync-v1.0.2-install.zip
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,8 +45,8 @@ jobs:
           errors = []
 
           addon_meta = json.loads((addon / 'addon.json').read_text(encoding='utf-8'))
-          if addon_meta.get('version_string') != '1.0.1':
-              errors.append('addon.json version_string must be 1.0.1')
+          if addon_meta.get('version_string') != '1.0.2':
+              errors.append('addon.json version_string must be 1.0.2')
           if addon_meta.get('version_id') != 10000010:
               errors.append('addon.json version_id must be 10000010')
 
@@ -132,8 +132,8 @@ jobs:
                  dist/upload/src/addons/Warext/GitHubSync/_releases
           rm -f dist/upload/src/addons/Warext/GitHubSync/hashes.json
 
-          cp release/v1.0.1/INSTALL.md dist/KURULUM-INSTALL.md
-          cp release/v1.0.1/RELEASE_NOTES.md dist/RELEASE_NOTES.md
+          cp release/v1.0.2/INSTALL.md dist/KURULUM-INSTALL.md
+          cp release/v1.0.2/RELEASE_NOTES.md dist/RELEASE_NOTES.md
           cp languages/English.xml dist/languages/English.xml
           cp languages/Turkish.xml dist/languages/Turkish.xml
           cp LANGUAGE.md dist/LANGUAGE.md
@@ -187,15 +187,15 @@ jobs:
           set -euo pipefail
           if gh release view "${TAG}" >/dev/null 2>&1; then
             gh release edit "${TAG}" \
-              --title "Warext GitHub Sync v1.0.1" \
-              --notes-file release/v1.0.1/RELEASE_NOTES.md \
+              --title "Warext GitHub Sync v1.0.2" \
+              --notes-file release/v1.0.2/RELEASE_NOTES.md \
               --prerelease=false \
               --latest
           else
             gh release create "${TAG}" \
               --target "${GITHUB_SHA}" \
-              --title "Warext GitHub Sync v1.0.1" \
-              --notes-file release/v1.0.1/RELEASE_NOTES.md \
+              --title "Warext GitHub Sync v1.0.2" \
+              --notes-file release/v1.0.2/RELEASE_NOTES.md \
               --latest
           fi
 
